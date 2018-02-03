@@ -11,8 +11,10 @@
 
 package org.usfirst.frc4762.SPEEM4762.commands;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc4762.SPEEM4762.Robot;
+import org.usfirst.frc4762.SPEEM4762.RobotMap;
 
 /**
  *
@@ -42,6 +44,8 @@ public class JoystickDrive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	Joystick Stick=Robot.oi.getDriveJoystick();
+    	RobotMap.driveSystemRobotDrive21.arcadeDrive(Stick.getY(),Stick.getX());
     }
 
     // Make this return true when this Command no longer needs to run execute()

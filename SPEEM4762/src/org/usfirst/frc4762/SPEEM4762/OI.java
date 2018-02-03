@@ -64,9 +64,9 @@ public class OI {
         driveJoystick = new Joystick(1);
         
         joystickButtonDown = new JoystickButton(driveJoystick, 10);
-        joystickButtonDown.whenPressed(new LiftDown());
+        joystickButtonDown.whileHeld(new LiftDown());
         joystickButtonUp = new JoystickButton(driveJoystick, 11);
-        joystickButtonUp.whenPressed(new LiftUp());
+        joystickButtonUp.whileHeld(new LiftUp());
 
 
         // SmartDashboard Buttons
