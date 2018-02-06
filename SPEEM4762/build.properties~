@@ -1,0 +1,5 @@
+# Project specific information
+package=org.usfirst.frc4762.SPEEM4762
+robot.class=${package}.Robot
+simulation.world.file=/usr/share/frcsim/worlds/GearsBotDemo.world
+
