@@ -18,7 +18,7 @@ public class Boost_de_boost extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.driveSystem.robotDrive21.setMaxOutput(0.75);
+    	Robot.driveSystem.robotDrive21.setMaxOutput(0.8);
     }
 
     // Called repeatedly when this Command is scheduled to run
