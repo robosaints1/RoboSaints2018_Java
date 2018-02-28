@@ -23,7 +23,7 @@ public class RobotMap {
     public static double driveSpeedBoost = .8;
     
     
-   
+
 
     public static void init() {
     	
@@ -35,7 +35,7 @@ public class RobotMap {
         
         driveSystemRobotDrive21 = new DifferentialDrive(driveSystemLeftDrive, driveSystemRightDrive);
         
-        driveSystemRobotDrive21.setSafetyEnabled(false);
+        driveSystemRobotDrive21.setSafetyEnabled(true);
         driveSystemRobotDrive21.setExpiration(0.1);
         //driveSystemRobotDrive21.setSensitivity(0.5);
         driveSystemRobotDrive21.setMaxOutput(0.5);

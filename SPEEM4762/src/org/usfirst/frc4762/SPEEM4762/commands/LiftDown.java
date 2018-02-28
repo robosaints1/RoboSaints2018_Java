@@ -13,6 +13,7 @@ package org.usfirst.frc4762.SPEEM4762.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc4762.SPEEM4762.Robot;
+import org.usfirst.frc4762.SPEEM4762.RobotMap;
 
 /**
  *
@@ -38,6 +39,7 @@ public class LiftDown extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	RobotMap.liftElevator.set(-0.2);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -51,10 +53,12 @@ public class LiftDown extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	RobotMap.liftElevator.set(0);
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	RobotMap.liftElevator.set(0);
     }
 }
